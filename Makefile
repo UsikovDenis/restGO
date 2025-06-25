@@ -31,6 +31,10 @@ deps:
     # Убираем неиспользуемые зависимости
     #(флаг -e предотвращает удаление неиспользуемых зависимостей) go mod tidy -e
 	go mod tidy
+    # подключение к DB
+	go get -u github.com/jmoiron/sqlx
+    # env фаил
+	go get -u github.com/joho/godotenv
 
 
 # DB commands
